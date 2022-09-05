@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilfey plug</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        a {
+            text-decoration: none;
+            color: #007fff;
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1, p {
+            font-size: 22px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .loading {
+            border: 3px solid #aaa;
+            border-top: 3px solid #007fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 0.5s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>
+            I have changed my nickname and domain accordingly, now you will be transferred to the new domain
+            <a href="https://ilfey.ml">ilfey.ml</a>.
+        </h1>
+        <p>Please wait 5 seconds</p>
+        <div class="loading"></div>
+    </div>
+    <script>
+        setTimeout(() => window.location.href = "https://ilfey.ml", 5 * 1000)
+    </script>
+</body>
+</html>
